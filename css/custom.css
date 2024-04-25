@@ -1,0 +1,47 @@
+/* your styles go here */
+#resumeDialog{
+    width: 100%;
+    height: 100%;
+    background-color: #2d3035dd;
+    /* opacity: .7; */
+    position: absolute;
+    top: 0;
+    display: none;
+    
+}
+#mainStuff{
+    width: 50%;
+    height: fit-content;
+    margin: 3em auto auto auto;
+    border: 1px solid #595f68;
+    position: relative;
+}
+#mainStuff h1{
+    text-align: center;
+    font-size: 1.4em !important;
+    margin-bottom: 1em;
+}
+#mainStuff button{
+    margin: 1em;
+}
+#closerr{
+    position: absolute;
+    top: 0;
+    right: .5em;
+}
+#closerr:hover{
+    box-shadow: 0 0 2px #595f68;
+}
+@media screen and (max-width:600px){
+    #mainStuff{
+        width: 90%;
+        margin: 2.5em auto auto auto;
+    }
+    #mainStuff h1{
+        font-size: 1.2em !important;
+    }
+    #closerr{
+        top: 0;
+        right: 0;
+    }
+}

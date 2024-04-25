@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/cccc.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>FredKinectics</title>
+    <style>
+        body {
+            background-color:#161730  !important;
+        }
+        .banner-section {
+            margin-top: 0 !important; /* Remove top margin */
+        }
+        /* Assuming you're applying this to a container div with a class of "gradient-container" */
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+         .title {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+         }
+         .sub-text {
+            font-family: "Inter", sans-serif;
+            font-size: 16px !important;
+            font-weight: 100 !important;
+            font-style: normal;
+            max-width: 600px !important;
+            margin-left: 0% !important
+         };
+        ul li a {
+             font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            color: white !important;
+        }
+        ul li a:hover {
+            color: white !important;
+        }
+        .register-btn a{
+            font-family: "Roboto", sans-serif !important;
+            font-weight: 500 !important;
+            font-style: normal;
+            color: white !important;
+        }
+
+        /* login btn */
+        .login-btn a{
+            font-family: "Roboto", sans-serif !important;
+            font-weight: 500 !important;
+            font-style: normal;
+            color: white !important;
+        }
+
+        .register-btn a:hover {
+            color: white !important;
+        }
+        /* login */
+        .login-btn a:hover {
+            color: white !important;
+        }
+        .register-btn {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            border-radius: 10px !important;
+            border:  none !important;
+            background-color: #351A88 !important;
+            color: white !important;
+            padding: 10px 30px;
+            text-decoration: none;
+            transition: transform 0.3s ease; /* Add transition for hover effect */
+            display: inline-block;
+        }
+        /* login */
+        .login-btn {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            border-radius: 10px !important;
+            border:  none !important;
+            background-color: #351A88 !important;
+            color: white !important;
+            padding: 10px 30px;
+            text-decoration: none;
+            transition: transform 0.3s ease; /* Add transition for hover effect */
+            display: inline-block;
+        }
+
+        .register-btn:hover {
+            transform: translateY(-5px); /* Move the button 5px up on hover */
+            color: white !important;
+        }
+        /* login */
+        .login-btn:hover {
+            transform: translateY(-5px); /* Move the button 5px up on hover */
+            color: white !important;
+        }
+.tradingview-widget-container {
+    background-color: #727177c4 !important;
+}
+.hero-text {
+    margin-top:150px !important;
+}
+.custom-button {
+    background-color: transparent;
+    color: #fff; /* Text color */
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #3C6DD9, #FF888F) 1;
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #3C6DD9; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+.get-profit-icons {
+    display: inline-block !important;
+    /* align-items: center !important; */
+    justify-content: center !important;
+}
+ .feature__item__two-thumbs {
+    background-color: #351A88;
+    border-radius: 50%;
+    width: fit-content !important;
+ }
+
+ .i-wrapper {
+    display: flex;
+    padding: 10px !important;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    background-color: #351A88 !important;
+    border-radius: 50% !important;
+    margin: 0 auto; /* Center horizontally */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.i-wrapper i {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Adjustments for icon size */
+.i-wrapper i {
+    font-size: 80px !important; /* Adjust icon size */
+}
+.counter__item {
+    font-weight: 300 !important;
+}
+@media (max-width: 768px) {
+    .hero-text {
+        margin-top: 10px  !important; /* Adjust as needed */
+    }
+    .title {
+        font-size: 32px !important;
+        line-height: 20px; /* Adjust line height as needed */
+        text-align: left !important;
+    }
+    .social-links {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+</style>
+
+</head>
+<body class="overflow-x-hidden">
+    <div class="preloader">
+        <div class="preinnner">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+    </div>
+    <!-- TradingView Widget BEGIN -->
+
+<!-- TradingView Widget END -->
+
+    <!-- Header Section Starts Here -->
+   
+   
+    <!-- Header Section Ends Here -->
+
+
+    <!-- Banner Section Starts Here -->
+    <section class=" cont overflow-hidden position-relative ">
+        <div class=" container-fluid tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>-->
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+            "symbols": [
+              {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500 Index"
+              },
+              {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "US 100 Cash CFD"
+              },
+              {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR to USD"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+              },
+              {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "Ethereum"
+              },
+              {
+                "description": "Tesla",
+                "proName": "NASDAQ:TSLA"
+              }
+            ],
+            "showSymbolLogo": true,
+            "isTransparent": true,
+            "displayMode": "adaptive",
+            "colorTheme": "dark",
+            "locale": "en"
+          }
+        </script>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ";>
+                <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 g-4" style="column-gap: 30px !important; align-items: center;">
+                        <li class="nav-item">
+                            <a class="nav-link active  text-white " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white " href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white " href="plan.html">Plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white " href="faq.html">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white " href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="btns px-4">
+                        <button class="btn btn-outline-success custom-button" type="submit"><a href="register.html">Register</a></button>
+                        <button class="btn mx-4 btn-outline-success custom-button" type="submit"><a href="login.html">Login</a></button>
+                    </div>
+                </div>
+            </nav>
+            <div class="mt-lg-4">
+                <div class="row ">
+                  <div class=" col-sm-12 col-lg-6  hero-text">
+                        <h1 class=" title mt-lg-4" style="line-height: 30px !; font-size: 60px ;">Explore The Largest 
+                            <span style="background: linear-gradient(45deg, #3C6DD9, #FF888F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ATS</span> Trading Platform</h1>
+                            <p class="mx-auto my-sm-4 sub-text text-white">Join millions who've already discovered smarter investing by automatically copying the leading traders in our community</p>
+                        <a href="plan.html" class="mt-lg-4 custom-button">Invest Now</a>
+                        <div class="members">
+                            <h3 class="sub-text mt-3">Our Members <span><img src="./assets/images/avatars.png" width="40%"></span> </h3>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 d-none d-lg-block">
+                    <img src="./assets/images/hero img.png" width="90%">
+                </div>
+                
+                </div>
+              </div>
+            <!-- <div class="banner__content mx-100 text-center padding-top padding-bottom">
+                <h1 class="title">What we’re offering here is the use of an ATS system which the platform offers for our trading technique.</h1>
+                <p class="mx-auto text-white">Join millions who've already discovered smarter investing by automatically copying the leading traders in our community</p>
+                <a href="plan.html" class="cmn--btn">Invest Now</a>
+            </div> -->
+        </div>
+    </section>
+    
+    
+    <!-- Banner Section Ends Here -->
+
+
+    <!-- Plan Section Starts Here -->
+    <section class="plan-section padding-bottom">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                    <div class="plan__item ">
+                        <div class="plan__item-header">
+                            <h2 class="plan-parcent"style="background: linear-gradient(45deg, #3C6DD9, #FF888F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">120%</h2>
+
+                            <p class="plan-parcent-info">Every 72 Hours</p>
+                        </div>
+                        <div class="plan__item-body">
+                            <ul class="plan__info">
+                                <li>
+                                    <span class="title">Min :</span>
+                                    <span class="value">1000 USD</span>
+                                </li>
+                                <li class="mt-2">
+                                    <span class="title ">Max :</span>
+                                    <span class="value ">4000 USD</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="plan__item-footer">
+                            <p class="footer-info">Lifetime Earnings</p>
+                            <p class="text-white" style="letter-spacing: 1 !important;">Company Shares</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                    <div class="plan__item ">
+                        <div class="plan__item-header">
+                            <h2 class="plan-parcent"style="background: linear-gradient(45deg, #3C6DD9, #FF888F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">80%</h2>
+                            <p class="plan-parcent-info">Hourly</p>
+                        </div>
+                        <div class="plan__item-body">
+                            <ul class="plan__info">
+                                <li>
+                                    <span class="title">Min :</span>
+                                    <span class="value ">2000 USD</span>
+                                </li>
+                                <li class="mt-2">
+                                    <span class="title">Max :</span>
+                                    <span class="value "> 3500 USD </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="plan__item-footer">
+                            <p class="footer-info"> LIFETIME EARNINGS</p>
+                            <p class="text-white" style="letter-spacing: 1 !important;">FOREX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                    <div class="plan__item ">
+                        <div class="plan__item-header">
+                            <h2 class="plan-parcent"style="background: linear-gradient(45deg, #3C6DD9, #FF888F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">35%</h2>
+                            <p class="plan-parcent-info">Every 48 Hours</p>
+                        </div>
+                        <div class="plan__item-body">
+                            <ul class="plan__info">
+                                <li>
+                                    <span class="title">Min :</span>
+                                    <span class="value">1250 USD</span>
+                                </li>
+                                <li class="mt-2">
+                                    <span class="title">Max :</span>
+                                    <span class="value">3000 USD</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="plan__item-footer">
+                            <p class="footer-info"> LIFETIME EARNINGS</p>
+                            <p class="text-white" style="letter-spacing: 1 !important;">DIAMOND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                    <div class="plan__item ">
+                        <div class="plan__item-header">
+                            <h2 class="plan-parcent"style="background: linear-gradient(45deg, #3C6DD9, #FF888F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">20%</h2>
+                            <p class="plan-parcent-info">Every Day</p>
+                        </div>
+                        <div class="plan__item-body">
+                            <ul class="plan__info">
+                                <li>
+                                    <span class="title">Min :</span>
+                                    <span class="value">500 USD</span>
+                                </li>
+                                <li class="mt-2">
+                                    <span class="title">Max :</span>
+                                    <span class="value">1200 USD</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="plan__item-footer">
+                            <p class="footer-info"> LIFETIME EARNINGS</p>
+                            <p class="text-white" style="letter-spacing: 1 !important;">BRONZE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Plan Section Ends Here -->
+
+    <div class="container mb-lg-4 pb-lg-4">
+        <div class="mt-lg-4">
+            <div class="row g-4">
+              <div class="col-lg-6 ">
+                    <h1 class="  mt-lg-4" style="line-height: 30px !important; font-size: 38px !important; font-weight: 400;">
+                        Trade with confidence with <span style="background: linear-gradient(45deg, #3C6DD9, #FF888F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Our platform</span>  and easy to use.</h1>
+                    <p class="mx-auto sub-text text-white" style="max-width: 400px !important;">Stay up-to-date with the latest news and trends in the crypto space. Follow our market insights to make informed decisions.We starts collecting mining containers. A container of this architecture can hold up to 600 ASIC miners. Shield power up to 1 MW. Fan capacity up to 400,000 m3/h. Despite the impressive size of the container, if necessary, it can be easily transferred to a new place. Upon arrival, he can immediately mining, because the connection takes a few minutes. 
+                    Increase your deposit with us, stay with us and get decent passive income today!
+                    <a href="plan.html" class="mt-lg-4 custom-button">Explore Now</a>
+              </div>
+              <div class="col-sm-12 col-lg-6 d-none d-lg-block">
+                <img src="./assets/images/Img.png" width="70%">
+              </div>
+            </div>
+          </div>
+        <!-- <div class="banner__content mx-100 text-center padding-top padding-bottom">
+            <h1 class="title">What we’re offering here is the use of an ATS system which the platform offers for our trading technique.</h1>
+            <p class="mx-auto text-white">Join millions who've already discovered smarter investing by automatically copying the leading traders in our community</p>
+            <a href="plan.html" class="cmn--btn">Invest Now</a>
+        </div> -->
+    </div>
+   
+
+    <!-- Feature Two Section Starts Here -->
+    <!-- <section class="feature-section padding-bottom">
+        <div class="container">
+            <div class="section__header m-0">
+                <h2 class="section__header-title">Let`s Go for Investment & Get Your Profit</h2>
+                <span class="d-block"> FredKinectics, the first and safest crypto asset investment firm, was established to provide intelligent portfolios with its expert investors, customer-priority approach, safe and high-tech investment tools. Eliminating the risk factor to earn from digital assets, the platform is created to offer exclusive interest returns. </span>
+                
+            </div>
+            <div class="row gy-5">
+                <div class="col-sm-12 col-lg-3 d-flex justify-content-center align-items-center">
+                    <div class="feature__item__two">
+                        <div class="feature__item__two-thumb">
+                            <i class="las la-headset"></i>
+                        </div>
+                        <div class="feature__item__two-content text-center">
+                            <h3 class="title mb-2">24/7 Support</h3>
+                        </div>
+                    </div>
+                </div>
+hh                
+                <div class="col-lg-3 get-profit-icons bg-success">
+                        <div class="feature__item__two-thumbs">
+                            <i class="las la-coins" style="font-size: 200px !important;" ></i>
+                        </div>
+                        <div class="bg-danger ">
+                            <h3 class="title mb-2">Get More Profit</h3>
+                        </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 d-flex justify-content-center align-items-center">
+                    <div class="feature__item__two">
+                        <div class="feature__item__two-thumb">
+                            <i class="las la-headset"></i>
+                        </div>
+                        <div class="feature__item__two-content text-center">
+                            <h3 class="title mb-2">24/7 Support</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-lg-3">
+                    <div class="feature__item__two">
+                        <div class="feature__item__two-thumb">
+                            <i class="las la-shield-alt"></i>
+                        </div>
+                        <div class="feature__item__two-content">
+                            <h3 class="title mb-2">Strong Protection </h3>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="feature__item__two">
+                        <div class="feature__item__two-thumb">
+                            <i class="las la-user-check"></i>
+                        </div>
+                        <div class="feature__item__two-content">
+                            <h3 class="title mb-2">Relability</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Feature Two Section Ends Here -->
+
+    <div class="container mt-4 pt-lg-4">
+        <h2 class="text-center title">Secure & Private</h2>
+        <p class="text-center Support">24/7 Dedicated Support Team</p>
+        <div class="row support-wrapper" style="margin-top: 90px !important;"> 
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="support-box">
+                    <div class="support-eclipse"></div>
+                    <img src="./assets/images/icon.png" alt="Icon" class="support-img">
+                    <h3 class="support-text">Invest in crypto</h3>
+                    <p class="support-sub-text my-2">Invest in cryptocurrency with FredKinectics anytime, anywhere with our smart, safe, secure, and easy-to-use online platform. Step into you world with FredKinectics</p>
+                    <button class="support-btn">
+                        <a href="#" class="support-link">Get Started</a>
+                        <span>
+                            <img src="./assets/images/arrow.png" alt="Arrow" class="support-arrow">
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="support-box">
+                    <div class="support-eclipse-purple"></div>
+                    <img src="./assets/images/Group.png" alt="Icon" class="support-img">
+                    <h3 class="support-text">Fast Transaction</h3>
+                    <p class="support-sub-text my-2">Invest in cryptocurrency with our secure and easy-to-use online platform. With 24/7 access to full service customer support, you can trade with confidence.</p>
+                    <button class="support-btn">
+                        <a href="#" class="support-link">Get Started</a>
+                        <span>
+                            <img src="./assets/images/arrow.png" alt="Arrow" class="support-arrow">
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="support-box">
+                    <div class="support-eclipse-red"></div>
+                    <img src="./assets/images/icon (1).png" alt="Icon" class="support-img">
+                    <h3 class="support-text">Secure</h3>
+                    <p class="support-sub-text my-2">Gain access to a variety of digital assets with just a few clicks. Our intuitive platform makes it easy to buy, sell, and store your cryptocurrency.</p>
+                    <button class="support-btn">
+                        <a href="#" class="support-link">Get Started</a>
+                        <span>
+                            <img src="./assets/images/arrow.png" alt="Arrow" class="support-arrow">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+   
+
+    <!-- Profit Calculation Section Starts Here
+    <section class="profit-calculation padding-bottom overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="profit__calculation__content">
+                        <div class="section__header">
+                            <h2 class="section__header-title">Calculate Your Hyip investment</h2>
+                            <p>Aenean vulputate eleifend tellus. Aenean leo ligul porttitoeu consequat vitae eleifend acenim</p>
+                        </div>
+                        <form class="profit__calculation__form">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-12 col-xl-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Plan</label>
+                                        <select class="nice-select w-100 h-50">
+                                            <option>Select Plan</option>
+                                            <option>Silver Plan</option>
+                                            <option>Gold Plan</option>
+                                            <option>Platium Plan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-12 col-xl-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Compounding</label>
+                                        <select class="nice-select w-100 h-50">
+                                            <option>05%</option>
+                                            <option>15%</option>
+                                            <option>20%</option>
+                                            <option>25%</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-12 col-xl-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Profit</label>
+                                        <input type="text" class="form-control form--control" placeholder="$60,000">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-12 col-xl-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Total Returns</label>
+                                        <input type="text" class="form-control form--control" placeholder="$800000">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="section__thumb  ms-5">
+                        <img src="assets/images/calculate-profit/thumb2.png" alt="profit-calculation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    Profit Calculation Section Ends Here -->
+
+    <div class="container mt-4 py-lg-4">
+        <div class="container">
+            <div class="counter__wrapper row gy-4 gy-sm-5">
+                <div class="col-lg-4 col-sm-4">
+                    <div class="title text-center">
+                        <div class="text-center">
+                            <h2 class="title"style="font-size: 40px !important; font-family: 'Roboto', sans-serif; font-weight: 200; font-style: normal;"><span class="odometer" data-odometer-final="9153667"style="font-size: 80px !important;">0</span>M</h2>
+                        </div>
+                        <p class="sub-text text-white" style="font-weight: 00 !important; font-size: 20px !important;">REGISTERED USERS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 bg-">
+                    <div class="title text-center">
+                        <div class="text-center">
+                            <h2  class="title" style="font-size: 40px !important; font-family: 'Roboto', sans-serif; font-weight: 200; font-style: normal;"><span class="odometer" data-odometer-final="439870" style="font-size: 80px !important;">0</span>M</h2>
+                        </div>
+                        <p class="sub-text text-white" style="font-weight: 00 !important; font-size: 20px !important;">ACTIVE INVESTORS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                    <div class=""></div>
+                    <div class="counter__item text-center">
+                        <div class=" title text-center">
+                            <h2 class="title" style="font-size: 40px !important; font-family: 'Roboto', sans-serif; font-weight: 200; font-style: normal;"><span class="odometer"  data-odometer-final="80000" style="font-size: 80px !important;">0</span>$</h2>
+                        </div>
+                        <p class="sub-text text-white" style="font-weight: 00 !important; font-size: 20px !important;">MONTHLY WITHDRAWAL VOLUME</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter Section Starts Here -->
+    
+    <!-- <Counter Section Ends Here -->
+
+
+    <!-- Investor Section Starts Here -->
+    <section class="investor-section py-4 mt-4" style="margin-top: 40px !important;">
+        <div class="container">
+                    <div class="" style="text-align: center !important;">
+                        <h2 class="title">OUR PRESTIGE INVESTORS</h2>
+                        <p class=" " style=" font-family: 'Inter', sans-serif;
+                        font-size: 16px !important;
+                        font-weight: 100 !important;
+                        font-style: normal;
+                        text-align: center !important;">IQ Market platform is at your service with its user-friendly features, secure infrastructure and applications that make a difference.                        </p>
+                    </div>
+            <div class="row justify-content-center gy-5">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="investor__item style--two">
+                        <div class="investor__item-thumb">
+                            <img src="assets/images/investor/investor5.jpg" alt="investor">
+                        </div>
+                        <div class="investor__item-content">
+                            <h3 class="name">Elon Musk</h3>
+                            <p class="invest-amount">Invest 68,000,000 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="investor__item style--two">
+                        <div class="investor__item-thumb">
+                            <img src="assets/images/investor/markzuckerberg.jpg" alt="investor">
+                        </div>
+                        <div class="investor__item-content">
+                            <h3 class="name">Mark Zuckerberg</h3>
+                            <p class="invest-amount">Invest 56,000,000 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="investor__item style--two">
+                        <div class="investor__item-thumb">
+                            <img src="assets/images/investor/jimsimons.jpeg" alt="investor">
+                        </div>
+                        <div class="investor__item-content">
+                            <h3 class="name">Jim Simons</h3>
+                            <p class="invest-amount">Invest 49,000,000 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="investor__item style--two">
+                        <div class="investor__item-thumb">
+                            <img src="assets/images/investor/brucekovner.jpeg" alt="investor">
+                        </div>
+                        <div class="investor__item-content">
+                            <h3 class="name">Bruce Kovner</h3>
+                            <p class="invest-amount">Invest 68,000,000 USD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Investor Section Ends Here -->
+
+
+    <!-- Transection Section Starts Here -->
+    <section class="text-center">
+        <div class="">
+                <div class="mt-4 py-6">
+                    <div class=" py-2 text-center">
+                        <h2 class="title ">Latest Deposit & Withdraw </h2>
+                    </div>
+                </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <ul class="transection__tab__menu  style--two nav-tabs nav border-0 justify-content-center">
+                        <li><a data-bs-toggle="tab" href="#deposit" class="custom-button ">Last Deposit</a></li>
+                        <li><a data-bs-toggle="tab" href="#widthdraw" class="custom-button">Last Widthdraw</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane show fade active" id="deposit">
+                            <table class="table transection__table ">
+                                <thead>
+                                    <tr>
+                                        <th>User Name</th>
+                                        <th>Amount</th>
+                                        <th>Wallet</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item1.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Robert Mahfuj</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$1500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">Payeer</span></td>
+                                        <td data-label="Date"><span class="date">25 Apr 2021</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item2.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Munna Ahmed</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$1500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">Payeer</span></td>
+                                        <td data-label="Date"><span class="date">25 Jan 2021</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item3.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Rafuj Raihan</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$1500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">block.io</span></td>
+                                        <td data-label="Date"><span class="date">25 May 2021</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item4.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Robert Mahfuj</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$1500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">Bank Wire</span></td>
+                                        <td data-label="Date"><span class="date">25 Feb 2021</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item5.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Jibon Khan</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$2500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">Paypal</span></td>
+                                        <td data-label="Date"><span class="date">25 May 2021</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane show fade" id="widthdraw">
+                            <table class="table transection__table style--two">
+                                <thead>
+                                    <tr>
+                                        <th>User Name</th>
+                                        <th>Amount</th>
+                                        <th>Wallet</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item1.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Robert Mahfuj</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$1500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">Payeer</span></td>
+                                        <td data-label="Date"><span class="date">25 Apr 2021</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item2.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Munna Ahmed</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$1500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">Payeer</span></td>
+                                        <td data-label="Date"><span class="date">25 Jan 2021</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item3.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Rafuj Raihan</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$1500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">block.io</span></td>
+                                        <td data-label="Date"><span class="date">25 May 2021</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item4.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Robert Mahfuj</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$1500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">Bank Wire</span></td>
+                                        <td data-label="Date"><span class="date">25 Feb 2021</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="User Name">
+                                            <div class="user d-flex flex-wrap align-items-center">
+                                                <div class="thumb">
+                                                    <img src="assets/images/dashboard/item5.png" alt="dashboard">
+                                                </div>
+                                                <p class="name">Jibon Khan</p>
+                                            </div>
+                                        </td>
+                                        <td data-label="Amount"><span class="amount">$2500</span></td>
+                                        <td data-label="Wallet"><span class="wallet">Paypal</span></td>
+                                        <td data-label="Date"><span class="date">25 May 2021</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Transection Section Ends Here -->
+
+
+    <!-- Referral Section Starts Here -->
+    <section class="referral-section overflow-hidden padding-top padding-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 align-self-end d-none d-lg-block">
+                    <div class="section__thumb rtl me-5">
+                        <img src="assets/images/referral/thumb2.png" alt="referral">
+                        <div class="shapes">
+                            <img src="assets/images/referral/coin.png" alt="referral" class="shape shape3">
+                            <img src="assets/images/referral/drop.png" alt="referral" class="shape shape4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section__header">
+                        <h2 class="title" style="line-height: 0px;"><span style="font-size: 80px;  background: linear-gradient(45deg, #3C6DD9, #FF888F); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">25%</span> REFERRAL COMMISON</h2>
+                    </div>
+                    <a href="register.html" class="custom-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Referral Section Ends Here -->
+
+
+    <!-- Faq Section Starts Here -->
+    <section class="overflow-hidden container-fluid py-4" style="background: linear-gradient(45deg, #3c6ed918, #ff88901e);">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <div class="section__header mb-0">
+                        <h2 class="section__header-title">What Your Want to Know About Us ?</h2>
+                        <div class="faq__wrapper">
+                            <div class="faq__item style--two">
+                                <div class="faq__item-title">
+                                    <h4 class="title">When can I deposit/withdraw from my Investment account?</h4>
+                                </div>
+                                <div class="faq__item-content">
+                                    <p>Deposit and withdrawal are available for at any time. Be sure, that your funds are not used in any ongoing trade before the withdrawal. The available amount is shown in your dashboard on the main page of Investing platform.</p>
+                                </div>
+                            </div>
+                            <div class="faq__item style--two">
+                                <div class="faq__item-title">
+                                    <h4 class="title">How do I check my account balance?</h4>
+                                </div>
+                                <div class="faq__item-content">
+                                    <p> At your convenience, you have the privilege of accessing this vital information directly from your personalized account dashboard. This feature empowers you with the flexibility to review and analyze key data points whenever the need arises, ensuring that you stay informed and in control of your accounts at all times, without limitations on when or how often you can retrieve this valuable insight.</p>
+                                </div>
+                            </div>
+                            <div class="faq__item style--two">
+                                <div class="faq__item-title">
+                                    <h4 class="title">I forgot my password, what should I do?</h4>
+                                </div>
+                                <div class="faq__item-content">
+                                    <p> Visit the password reset page, type in your email address and click the `Reset` button.</p>
+                                </div>
+                            </div>
+                            <div class="faq__item style--two">
+                                <div class="faq__item-title">
+                                    <h4 class="title">What are digital assets and how are they valued?</h4>
+                                </div>
+                                <div class="faq__item-content">
+                                    <p>Digital assets distributed ledger based electronic means of exchanges. Transactions involving them are secured by cryptography, and they have dedicated servers for verification of transactions and the creation of extra units. The most popular of them are Bitcoin, Ethereum, Litecoin, etc. All digital assets are valued by price action, and as a result, almost total control is in the hand of the investing public.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="section__thumb ">
+                        <img src="assets/images/faq/thumb.png" alt="download">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq Section Ends Here -->
+
+
+   
+
+    <!-- Testimonial Section Starts Here -->
+    <section class="testimonial-section overflow-hidden padding-top pb-2">
+        <div class="container overflow-hidden">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-sm-12 col-md-10">
+                    <div class=" text-center">
+                        <h2 class="title">What our clients say about us </h2>
+                        <p style="font-family: 'Inter', sans-serif;">Below are few reviews from some of our investors. Kindly swipe left for more reviews from few of our investors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-4 testimonial__slider__two">
+                <div class="single-slide">
+                    <div class="testimonial__item__two">
+                        <div class="testimonial__item__two-header">
+                            <div class="thumb">
+                                <img src="assets/images/1.jpg" alt="testimonial">
+                            </div>
+                            <div class="content">
+                                <h4 class="name">Gloria Owens</h4>
+                            </div>
+                            <div class="icon"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <div class="testimonial__item__two-content">
+                            <p>FredKinectics is the best bitcoin platform ever. It has been paying my bills for 2 years now. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="testimonial__item__two">
+                        <div class="testimonial__item__two-header">
+                            <div class="thumb">
+                                <img src="assets/images/2.jpg" alt="testimonial">
+                            </div>
+                            <div class="content">
+                                <h4 class="name">Sarah Burton</h4>
+                            </div>
+                            <div class="icon"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <div class="testimonial__item__two-content">
+                            <p>Five stars for the best investment platform FredKinectics. You have changed my life❤️❤️❤️. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="testimonial__item__two">
+                        <div class="testimonial__item__two-header">
+                            <div class="thumb">
+                                <img src="assets/images/3.jpg" alt="testimonial">
+                            </div>
+                            <div class="content">
+                                <h4 class="name">Catherine Brown</h4>
+                            </div>
+                            <div class="icon"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <div class="testimonial__item__two-content">
+                            <p>FredKinectics is the best I have ever seen. The mining is fast and the withdrawal is instant. Love you🥰. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slide">
+                    <div class="testimonial__item__two">
+                        <div class="testimonial__item__two-header">
+                            <div class="thumb">
+                                <img src="assets/images/4.jpg" alt="testimonial">
+                            </div>
+                            <div class="content">
+                                <h4 class="name">Peter Anderson</h4>
+                            </div>
+                            <div class="icon"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                        <div class="testimonial__item__two-content">
+                            <p>Keep up with the good job👏. Great mining, Instant withdrawal. So happy investing here. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section Ends Here -->
+
+
+    <!-- How it Works Section Starts Here -->
+    <!-- How it Works Section Ends Here -->
+
+
+
+ 
+
+    <!-- Footer Section Starts Here -->
+    <footer class="">
+        <div class="footer-top padding-top  ">
+            <div class="container">
+                <div class="row gy-5 justify-content-md-between">
+                    <div class="col-lg-6  col-sm-6">
+                        <div class="footer__widget">
+                            <h3 class="title">About Company</h3>
+                            <p class="sub-text">Cryptocurrency has revolutionized the world of finance and digital transactions, providing individuals with a decentralized and secure way to store, trade, transfer, and manage their wealth</p>
+                            <div class="custom-button my-2" style="width: fit-content !important;">Register</div>
+                           <ul class="social-links">
+                                <li><a class="facebook-bg" href="#0"><i class="lab la-facebook-f"></i></a></li>
+                                <li><a class="twitter-bg" href="#0"><i class="lab la-twitter"></i></a></li>
+                                <li><a class="instagram-bg" href="#0"><i class="lab la-instagram"></i></a></li>
+                                <li><a class="pinterest-bg" href="#0"><i class="lab la-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  col-sm-6" >
+                        <div class="email-wrapper">
+                            <div class=" w-100 d-flex justify-content-start">
+                                <h3 class="title subscribe">Subscribe</h3>
+                            </div>
+                            <p class="sub-text subscribe-text w-100 d-flex justify-content-start">Stay up-to-date on discounts, offers, and events. Unsubscribe at any time.</p>
+                            <div class="input-wrapper px-2 py-1">
+                                <img src="./assets/images/email-icon.png" alt="Email Icon">
+                                <input type="text" class="w-50">
+                                <button class="submit">Submit</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="container mb-lg-4 pb-lg-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="footer-links d-flex align-items-center justify-content-start" style="column-gap: 40px;">
+                        <li><a class="sub-text " href="plan.html">Plan</a></li>
+                        <li><a class="sub-text " href="about.html">About</a></li>
+                        <li><a class="sub-text " href="faq.html">FAQ</a></li>
+                        <li><a class="sub-text " href="contact.html">Contact Us</a></li>
+                        <li><a class="sub-text " href="login.html">Login Account</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="sub-text copyright text-center">
+                        Copyright &copy; 2021 All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Footer Section Ends Here -->
+    
+
+    <a href="#0" class="scrollToTop"><i class="las la-rocket"></i></a>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--<script src="../../code.tidio.co_443/rmglurlvjhncqahg8o0ao8uekysq4q3f.js" async></script>-->
+</body>
+
+<!-- Mirrored from template.viserlab.com/digihyip/demo/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Oct 2022 15:15:19 GMT -->
+
+<!-- Mirrored from codeguruz.top/analyzze/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Sep 2023 00:49:07 GMT -->
+</html>

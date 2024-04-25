@@ -1,0 +1,213 @@
+.odometer-font-size{
+    font-size: 80px !important; /* Default font size */
+}
+
+/* @media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    .odometer {
+        font-size: 40px !important; /* Further adjust font size for smaller screens 
+    
+ */
+
+.email-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 12px;
+    /* background-color: #28a745; Adjust background color */
+    color: #fff; /* Text color */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.email-wrapper .title {
+    font-size: 24px;
+}
+
+.email-wrapper .sub-text {
+    font-size: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+.input-wrapper img {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+    margin-left: 10px; /* Add spacing between icon and input */
+}
+
+.input-wrapper input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+.input-wrapper button.submit {
+    padding: 5px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: #351A88; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+/* Updated style for navbar toggler */
+
+/* Change navbar icon color to white and remove outline, shadow, and border */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+}
+.navbar-toggler ::fo
+/*  */
+/* Style for the icon inside the navbar-toggler */
+.navbar-toggler .fas.fa-bars {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+/* Media queries for responsiveness */
+
+
+@media (max-width: 768px) {
+    
+    .email-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1px;
+        gap: 10px;
+        /* background-color: #28a745; Adjust background color */
+        color: #fff; /* Text color */
+        border-radius: 10px; /* Add rounded corners */
+    }
+    .odometer-font-size span {
+        font-size: 40px !important; /* Adjust 
+        font size for smaller screens */
+        color: #351A88;
+    }
+    .odo-text {
+        font-size: 15px !important;
+    }
+    .counter__wrapper {
+        display: inline-block !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .counter__wrapper-sub {
+        
+    }
+    .email-wrapper .title {
+        font-size: 20px;
+    }
+    
+    .email-wrapper .sub-text {
+        font-size: 14px;
+    }
+    
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 0px 0px !important;
+    }
+    
+    .input-wrapper img {
+        width: 20px; /* Adjust icon size */
+        height: 20px; /* Adjust icon size */
+        margin-left: 10px; /* Add spacing between icon and input */
+    }
+    
+    .input-wrapper input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 12px;
+        background-color: transparent !important;
+        outline: none !important;
+    }
+    
+    .input-wrapper button.submit {
+        padding: 5px 20px;
+        border: none;
+        border-radius: 50px;
+        background-color: #351A88; /* Button background color */
+        color: #fff; /* Button text color */
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .footer-text {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .footer__widget .sub-text {
+        padding: 5px 0px;
+    }
+    .faq__item-title .title {
+        font-size: 12px !important;
+    }
+    .faq__item-content p {
+        font-size: 10px !important;
+    }
+    .faq-header {
+        display: flex;
+        align-items: center; /* Align items vertically */
+    }
+    
+    .faq-header .section__header-title {
+        margin-right: 10px; /* Adjust as needed for spacing between text and image */
+    }
+    .question-mark {
+        width: 20px !important;
+       
+    }
+    .ref-text {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    .ref-head {
+        font-size: 30px !important;
+        /* line-height: 30px !important; */
+    }
+    .odometer-ribbon-value {
+        font-size: 30px !important; /* Adjust font size for small screens */
+        line-height: 40px !important;
+    }
+    
+}
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 576px) {
+    .odometer {
+        font-size: 10px !important; /* Further adjust font size for smaller screens */
+    }
+}

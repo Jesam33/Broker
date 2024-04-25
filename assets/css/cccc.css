@@ -1,0 +1,150 @@
+/* Frame 16 */
+.support-box {
+    position: relative;
+    background: linear-gradient(186.47deg, rgba(255, 253, 253, 0.4) -20.85%, rgba(255, 253, 253, 0.2) -20.83%, rgba(255, 255, 255, 0) 116.4%);
+    /* Background Blur */
+    backdrop-filter: blur(10px); /* Reduce blur effect for a softer glow */
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 4px;
+    padding: 20% ;
+    /* overflow: hidden;  */
+}
+
+/* Ellipse 1538 */
+.support-eclipse {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 50%; /* Center horizontally */
+    top: -0px; /* Adjust top position */
+    background: #FDB730;
+    filter: blur(65px);
+    border-radius: 50%; /* Make it a circle */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: -1; /* Push it behind the content */
+}
+.support-eclipse-purple {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 50%; /* Center horizontally */
+    top: -0px; /* Adjust top position */
+    background: #945BEF;
+    filter: blur(65px);
+    border-radius: 50%; /* Make it a circle */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: -1; /* Push it behind the content */
+}
+.support-eclipse-red {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 50%; /* Center horizontally */
+    top: -0px; /* Adjust top position */
+    background: #ED261D;
+    filter: blur(65px);
+    border-radius: 50%; /* Make it a circle */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: -1; /* Push it behind the content */
+}
+
+/* Icon */
+/* Icon */
+.support-img {
+    position: absolute;
+    top: -0%; /* Move it up by half of its own height */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center vertically */
+    z-index: 100; /* Place above other elements inside the box */
+}
+
+
+/* Invest in crypto */
+.support-text {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+   
+}
+
+/* Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform. */
+.support-sub-text {
+    font-size: 16px;
+    text-align: center;
+    color: #898CA9;
+   max-width: 450px !important;
+}
+
+/* Button */
+.support-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent !important;
+}
+
+/* Button text */
+.support-link {
+    font-weight: 600;
+    font-size: 16px;
+    color: #6200EE;
+}
+
+/* Arrow icon */
+.support-arrow {
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (max-width: 768px) {
+    .support-box {
+        position: relative;
+        background: linear-gradient(186.47deg, rgba(255, 253, 253, 0.4) -20.85%, rgba(255, 253, 253, 0.2) -20.83%, rgba(255, 255, 255, 0) 116.4%);
+        /* Background Blur */
+        backdrop-filter: blur(10px); /* Reduce blur effect for a softer glow */
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 4px;
+        padding: 10% ;
+        margin-bottom: 50px !important;
+        /* overflow: hidden;  */
+    }
+    .support-img {
+       width: 25% !important;
+    }
+    .support-text {
+        padding-top: 20px;
+    }
+    .scrollToTop {
+        position: fixed;
+        bottom: -20px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency here */
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 9999; /* Ensure it's above other content */
+        opacity: 0.5;
+        /* visibility: hidden; */
+    }
+    
+    .scrollToTop.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .footer-container {
+        position: relative;
+    }
+    
+    .footer-container .scrollToTop {
+        position: absolute;
+        top: -40px; /* Adjust as needed to position it on top of the copyright */
+    }
+        
+}
